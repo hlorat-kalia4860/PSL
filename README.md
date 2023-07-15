@@ -17,8 +17,12 @@ The program can:
 4. Lowers the APM of hard drives
 5. Puts the audio card into power saving mode
 6. Increases the write time to virtual memory
-When charging is connected, the program sets the default parameters
 
+When charging is connected, the program sets the default parameters.
+
+To install, place psl-daemon.service in the "/etc/systemd/system" folder, then psl-config.sh move to /usr/bin and make it executable with the command "sudo chmod +x psl-config.sh ". After that, enter the following commands into the terminal:
+"sudo systemctl enable psl-daemon"
+"sudo systemctl run psl-daemon"
 ## Distribute
 
 - [Service Name](Page Link)
