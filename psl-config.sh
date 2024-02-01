@@ -5,12 +5,7 @@
 if grep "0" /sys/class/power_supply/*/online
 
 
-
-
 then # If charging is disabled
-
-
-
 
 
 # Editing APM hard drives on 128
@@ -48,12 +43,7 @@ echo 0 > /proc/sys/kernel/nmi_watchdog
 
 echo 6000 > /proc/sys/vm/dirty_writeback_centisecs
 
-
-
-
 else # If charging is enabled
-
-
 
 
 # Editing APM hard drives on 248
@@ -87,7 +77,5 @@ echo 1 > /proc/sys/kernel/nmi_watchdog
 # Changing the write time to virtual memory
 
 echo 500 > /proc/sys/vm/dirty_writeback_centisecs
-
-
 
 fi
